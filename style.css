@@ -1,5 +1,5 @@
 :root {
-    --clr-primary: rgb(54,112,199);
+    --clr-primary: rgb(30, 75, 143);
     --clr-light: #f4f4f4;
     --clr-dark: #333;
     --clr-warning: rgb(99,36,36);
@@ -35,7 +35,7 @@ body {
     font-weight: 900;
     color: rgba(0,0,0,.2);
     letter-spacing: 1px;
-    margin: -.18em 0 .5em 0;
+    margin: -.12em 0 .5em 0;
 }
 
 .task-list{
@@ -139,10 +139,11 @@ form{
     grid-area: active;
     background: var(--clr-light);
     color: var(--clr-dark);
-    
+    border-radius: 5px 5px 5px 5px;
 }
 
 .todo-header {
+    border-radius: 5px 5px 0 0;
     padding: var(--spacer);
     background: #e4e4e4;
     display: flex;
@@ -254,5 +255,9 @@ form{
     bottom: -35px;
     color: var(--clr-light);
     font-weight: 700;
+}
+
+.delete-stuff button{
+    outline:none;
 }
 

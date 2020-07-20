@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A better Todo List</title>
+    <title>Todo Listen App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -22,10 +22,10 @@
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <h1 class="title">Stuff I need to do</h1>
+    <h1 class="title">To-Do Listen App</h1>
 
     <div class="all-tasks">
-        <h2 class="task-list-title">My lists</h2>
+        <h2 class="task-list-title">Meine To-Do Listen</h2>
         <ul class="task-list" data-lists>
     <!--         <li class="list-name active-list">YouTube</li>
             <li class="list-name">Work</li>
@@ -33,7 +33,7 @@
         </ul>
 
         <form action="" data-new-list-form>
-            <input data-new-list-input type="text" class="new list" placeholder="New List Name" aria-label="New List Name" />
+            <input data-new-list-input type="text" class="new list" placeholder="Neue Liste" aria-label="Neue Liste" />
             <button class="btn create" aria-label="create new list">+</button>
         </form>
 
@@ -41,54 +41,36 @@
     <div class="todo-list" data-list-display-container>
 
         <div class="todo-header">
-            <h2 class="list-title" data-list-title>YouTube</h2>
-            <p class="task-count" data-list-count>3 tasks remaining</p>
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count></p>
         </div>
 
         <div class="todo-body">
             <div class="tasks" data-tasks>
-                <div class="task">
-                    <input type="checkbox" name="" id="task-1" />
-                    <label for="task-1">
-                        <span class="custom-checkbox"></span>
-                        record todo List Video
-                    </label>
-                </div>
-
-                <!-- Close Task 1 -->
-                <div class="task">
-                    <input type="checkbox" name="" id="task-2" />
-                    <label for="task-2">
-                        <span class="custom-checkbox"></span>
-                        Create Todo List HTML
-                    </label>
-                </div>
-                <!-- Close Task 2 -->
-
-                <div class="task">
-                    <input type="checkbox" name="" id="task-3" />
-                    <label for="task-3">
-                        <span class="custom-checkbox"></span>
-                        Create Todo List CSS
-                    </label>
-                </div>
-                <!-- Close Task 3 -->
 
             </div>
             <div class="new-task-creator">
-                <form action="">
-                    <input type="text" class="new task" placeholder="New Task Name" aria-label="New Task Name" />
-                    <button class="btn create" aria-label="create new Task">+</button>
+                <form action="" data-new-task-form>
+                    <input data-new-task-input type="text" class="new task" placeholder="Neue Aufgabe" aria-label="Neue Aufgabe" />
+                    <button class="btn create" aria-label="erstelle neue Aufgabe">+</button>
                 </form>
             </div>
             <div class="delete-stuff">
-                <button class="btn delete">Clear Completed Tasks</button>
-                <button class="btn delete" date-delete-list-button>Delete List</button>
+                <button class="btn delete" data-clear-complete-tasks-button>Fertige Aufgaben löschen</button>
+                <button class="btn delete" data-delete-list-button>Liste löschen</button>
             </div>
         </div>
 
     </div>
-    <script src="" async defer></script>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox" name="" id="" />
+            <label for="">
+                <span class="custom-checkbox"></span>
+                
+            </label>
+        </div>
+    </template>
 </body>
 
 </html>
